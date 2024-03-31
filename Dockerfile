@@ -27,9 +27,11 @@ RUN npm cache clear --force
 RUN npm config set fetch-retry-maxtimeout 120000
 RUN npm config set registry $NPM_REGISTRY_URL --location=global
 
-RUN npm install --location=global @angular/cli@14.2.12
+RUN npm install --location=global @angular/cli@15.2.11
 
 RUN npm install
+
+ENV NODE_OPTIONS "--max-old-space-size=4096"
 
 RUN ng build --output-path=/dist $BUILD_ENVIRONMENT_OPTIONS
 
