@@ -30,6 +30,7 @@
         <fa-icon class="mr-05" icon="shield-alt" size="lg"></fa-icon>
         {{'labels.menus.Admin' | translate}}
       </a>
+      <!--
       <a #selfService mat-tab-link class="tab-link" [matMenuTriggerFor]="selfServiceMenu" #selfServiceMenuTrigger="matMenuTrigger">
         <fa-icon class="mr-05" icon="users" size="lg"></fa-icon>
         {{'labels.menus.Self Service' | translate}}
@@ -39,7 +40,7 @@
         <fa-icon class="mr-05" icon="info" size="lg"></fa-icon>
         {{'labels.menus.Configuration Wizard' | translate}}
       </a>
-
+-->
     </span>
 
   </nav>
@@ -80,8 +81,10 @@
 
 <mat-menu #institutionMenu="matMenu" [overlapTrigger]="false">
   <button mat-menu-item routerLink="/clients">{{'labels.menus.Clients' | translate}}</button>
+  <!--
   <button mat-menu-item routerLink="/groups">{{'labels.menus.Groups' | translate}}</button>
   <button mat-menu-item routerLink="/centers">{{'labels.menus.Centers' | translate}}</button>
+  -->
   <span fxHide.lt>
     <button mat-menu-item [routerLink]="['/accounting']">{{'labels.menus.Accounting' | translate}}</button>
     <button mat-menu-item [matMenuTriggerFor]="reportsMenu">{{'labels.menus.Reports' | translate}}</button>
@@ -117,12 +120,14 @@
 
 <!-- Application User Help Menu -->
 <mat-menu #applicationMenu="matMenu" [overlapTrigger]="false">
+  <!--
   <button mat-menu-item (click)="help()">
     <mat-icon matListIcon>
       <fa-icon icon="question-circle" size="sm"></fa-icon>
     </mat-icon>
     <span>{{'labels.menus.Help' | translate}}</span>
   </button>
+  -->
   <button mat-menu-item [routerLink]="['/profile']">
     <mat-icon>
       <fa-icon icon="user" size="sm"></fa-icon>

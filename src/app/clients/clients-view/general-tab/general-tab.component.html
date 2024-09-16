@@ -236,6 +236,8 @@
   </table>
 
   <!-- Saving overview Table -->
+  <!--
+
   <div class="heading-content">
     <div fxLayout="column" fxFlex="50%">
       <div class="heading-name">
@@ -312,8 +314,11 @@
       [routerLink]="['../', 'savings-accounts', row.id, 'general']"></tr>
 
   </table>
+-->
 
   <!-- Closed Saving Accounts -->
+  <!--
+
   <table *ngIf="showClosedSavingAccounts" mat-table
     [dataSource]="savingAccounts|accountsFilter:'saving':'closed':'isSavings'">
 
@@ -342,6 +347,8 @@
   </table>
 
   <!-- Fixed Deposit Table -->
+  <!--
+
   <div class="heading-content">
     <div fxLayout="column" fxFlex="50%">
       <div class="heading-name">
@@ -408,9 +415,9 @@
       [routerLink]="['../', 'fixed-deposits-accounts', row.id, 'general']"></tr>
 
   </table>
-
+-->
   <!-- Closed Fixed Deposit Accounts -->
-
+  <!--
   <table *ngIf="showClosedFixedAccounts" mat-table
     [dataSource]="savingAccounts|accountsFilter:'saving':'closed':'isFixed'">
 
@@ -438,8 +445,10 @@
       [routerLink]="['../', 'fixed-deposits-accounts', row.id, 'general']"></tr>
 
   </table>
-
+-->
   <!-- Recurring Deposit Table -->
+     <!--
+
   <div class="heading-content">
     <div fxLayout="column" fxFlex="50%">
       <div class="heading-name">
@@ -513,8 +522,10 @@
       [routerLink]="['../', 'recurring-deposits-accounts', row.id, 'general']" class="select-row"></tr>
 
   </table>
-
+-->
   <!-- Closed Recurring Deposit Accounts -->
+     <!--
+
   <table *ngIf="showClosedRecurringAccounts" mat-table
     [dataSource]="savingAccounts|accountsFilter:'saving':'closed':'isRecurring'">
 
@@ -541,8 +552,10 @@
     <tr mat-row *matRowDef="let row; columns: closedSavingsColumns;"
     [routerLink]="['../', 'recurring-deposits-accounts', row.id, 'general']" class="select-row"></tr>
   </table>
-
+-->
   <!-- Shares overview Table -->
+     <!--
+
   <div class="heading-content">
     <div fxLayout="column" fxFlex="50%">
       <div class="heading-name">
@@ -608,8 +621,10 @@
       [routerLink]="['../', 'shares-accounts', row.id, 'general']"></tr>
 
   </table>
-
+-->
   <!-- Closed Share Accounts -->
+     <!--
+
   <table *ngIf="showClosedShareAccounts" mat-table [dataSource]="shareAccounts|accountsFilter:'share':'closed'">
 
     <ng-container matColumnDef="Account No">
@@ -643,7 +658,7 @@
     <tr mat-row *matRowDef="let row; columns: closedSharesColumns;" [routerLink]="['../', 'shares-accounts', row.id, 'general']"></tr>
 
   </table>
-
+-->
   <!-- Collateral Data Table -->
   <div class="heading-content">
     <div fxLayout="column" fxFlex="50%">

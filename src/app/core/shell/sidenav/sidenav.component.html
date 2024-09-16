@@ -105,12 +105,14 @@
           </mat-icon>
           <a matLine>{{'labels.menus.Keyboard Shortcuts' | translate}}</a>
         </mat-list-item>
+        <!--
         <mat-list-item [matTooltipPosition]="tooltipPosition" matTooltip="{{ 'tooltips.Help' | translate}}">
           <mat-icon matListIcon (click)="help()">
             <fa-icon icon="question-circle" size="sm"></fa-icon>
           </mat-icon>
           <a matLine>{{'labels.menus.Help' | translate}}</a>
         </mat-list-item>
+        -->
       </mat-nav-list>
 
     </div>
@@ -169,6 +171,7 @@
   </div>
 </ng-template>
 
+<!--
 <ng-template #templateFrequentPostings let-popover="popover">
   <h2>{{'labels.menus.Frequent Postings' | translate}}</h2>
   <p class="mw300">{{"labels.text.Shortcut accounting rules" | translate}}</p>
@@ -178,7 +181,7 @@
     <button mat-raised-button color="primary" (click)="popover.close();showPopover(templateCreateJournalEntry,createJournalEntry,'top', true);">{{"labels.buttons.Next" | translate}}</button>
   </div>
 </ng-template>
-
+-->
 <ng-template #templateCreateJournalEntry let-popover="popover">
   <h2>{{'labels.menus.Create Journal Entry' | translate}}</h2>
   <p class="mw300">{{"labels.text.Shortcut entry screen" | translate}}</p>
