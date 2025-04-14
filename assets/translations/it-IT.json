@@ -555,7 +555,6 @@
       "transaction_client": "transazione_cliente",
       "transaction_loan": "transazione_prestito",
       "transaction_savings": "transazione_risparmio",
-      "xbrlmapping": "xbrlmapp",
       "CLIENT": "CLIENTE",
       "Loan": "Prestito",
       "Savings": "Risparmio",
@@ -786,7 +785,8 @@
       "required": "necessario",
       "required and cannot be negative": "obbligatorio e non può essere negativo",
       "should": "Dovrebbe",
-      "on": "SU"
+      "on": "SU",
+      "Password validation": "La password deve contenere almeno {{minchar}} caratteri, di cui 1 carattere maiuscolo, minuscolo e speciale e non deve essere composta da caratteri ripetuti o spazi bianchi"
     },
     "heading": {
       "Account Linked Financial": "Elenco dei conti collegati a diverse attività finanziarie. Per saperne di più clicca:",
@@ -2450,7 +2450,13 @@
       "INTEREST REFUND": "RIMBORSO DEGLI INTERESSI",
       "Supported Interest Refund Types": "Tipi di rimborso degli interessi supportati",
       "SUPPORTED REFUND TRANSACTIONS FOR INTEREST REFUND": "Tipi di rimborso degli interessi supportati",
-      "Charge-off reason": "Motivo dell'addebito"
+      "Charge-off reason": "Motivo dell'addebito",
+      "Password must contain at least one uppercase letter": "La password deve contenere almeno una lettera maiuscola",
+      "Password must contain at least one number": "La password deve contenere almeno un numero",
+      "Password must have not consecutive repeating characters": "La password non deve contenere caratteri ripetuti consecutivi",
+      "Password must contain at least one special character (@$!%*?&)": "La password deve contenere almeno un carattere speciale (@$!%*?&)",
+      "Password minimun length must be": "La lunghezza minima della password deve essere",
+      "Passwords do not match": "Le password non corrispondono"
     },
     "links": {
       "Community": "Comunità",
@@ -2576,8 +2582,7 @@
       "Apply Additional Shares": "Applicare aggiuntivo",
       "Redeem Shares": "Riscattare azioni",
       "Approve Additional Shares": "Approvare azioni aggiuntive",
-      "Reject Additional Shares": "Rifiutare condivisioni aggiuntive",
-      "XBRL": "XBRL"
+      "Reject Additional Shares": "Rifiutare condivisioni aggiuntive"
     },
     "placeholders": {
       "Add new server": "Aggiungi nuovo server",
@@ -3242,8 +3247,6 @@
       "Working Days": "Giorni lavorativi",
       "Working days and configure behaviour of payments": "Definisci i giorni lavorativi e configura il comportamento dei pagamenti dovuti nei giorni festivi",
       "Working days page allows you to define which days": "La pagina Giorni lavorativi consente di definire quali giorni della settimana sono giorni lavorativi.",
-      "XBRL": "XBRL",
-      "XBRL Report": "Rapporto XBRL",
       "Your answer is": "La tua risposta è",
       "by": "di",
       "do not match": "non corrispondono",
