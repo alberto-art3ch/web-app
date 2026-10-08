@@ -169,6 +169,17 @@
           <mat-label>{{ 'labels.inputs.Breach Grace Days' | translate }}</mat-label>
           <input type="number" min="0" matInput mifosxPositiveNumber formControlName="breachGraceDays" />
         </mat-form-field>
+
+        <mat-form-field class="flex-23">
+          <mat-label>{{ 'labels.inputs.Breach Start Type' | translate }}</mat-label>
+          <mat-select formControlName="breachStartType">
+            @for (breachStartType of breachStartTypeOptions; track breachStartType) {
+              <mat-option [value]="breachStartType.code">
+                {{ breachStartType.value | translateKey: 'catalogs' }}
+              </mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
       }
     }
 
